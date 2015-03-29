@@ -1,0 +1,11 @@
+<div class="navbar-fixed-top blog-masthead">
+  <div class="container">
+    <nav class="blog-nav">
+      {% for page in site.pages %}
+      {% if page.title %}
+      <a class="blog-nav-item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+</div>
