@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="Yuchen Wang">
+  <!-- <link rel="icon" href="favicon.ico"> -->
+
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ "/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ "/bootstrap/css/blog.css" | prepend: site.baseurl }}" rel="stylesheet">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+</head>
