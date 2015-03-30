@@ -1,4 +1,7 @@
 _site/
+.RData
+.Rhistory
 .DS_Store
 Gemfile
 Gemfile.lock
+.Rproj.user
