@@ -9,3 +9,5 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://wangyuchen.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username:  wangyuchen
+kramdown:
+  input: GFM
