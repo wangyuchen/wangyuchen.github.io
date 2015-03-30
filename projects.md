@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-List of my projects.
+* [Numeric Examples Using R]({{ "/rnote" | prepend: site.baseurl }}): R version of Stat 8320's SAS note.
