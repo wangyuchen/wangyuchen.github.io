@@ -1,11 +1,17 @@
-<div class="navbar-fixed-top blog-masthead">
+{% assign current = page.url | downcase | split: '/' %}
+
+
+<header class="navbar-fixed-top blog-masthead">
   <div class="container">
     <nav class="blog-nav">
-      {% for page in site.pages %}
-      {% if page.title %}
-      <a class="blog-nav-item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-      {% endfor %}
+      <a class="blog-nav-item home {% if current[1] == "index.html" %} active {% endif %}"
+        href="/index.html">Yuchen's Blog</a>
+      <a class="blog-nav-item {% if current[1] == "about.html" %} active {% endif %}"
+        href="/about.html">About</a>
+      <a class="blog-nav-item {% if current[1] == "talks" %} active {% endif %}"
+        href="/talks/">Talks</a>
+      <a class="blog-nav-item {% if current[1] == "projects" %} active {% endif %}"
+        href="/projects/">Projects</a>
     </nav>
   </div>
-</div>
+</header>
